@@ -58,7 +58,7 @@ app.use(cors());
 app.use("/register", require('./Backend/api/routes/registration.routes'));
 
 app.get('/', async (req, res) => {
-  res.send('hi')
+  res.send('Server is running')
 })
 
 //route not found

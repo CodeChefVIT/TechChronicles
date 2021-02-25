@@ -40,3 +40,18 @@ exports.add = async (req, res) => {
     }
   }
 };
+
+exports.getAll = async (req, res) => {
+  const registrations = await Registration.find({});
+  if (registrations) {
+    res.status(200).json({
+      success: true,
+      registrations,
+    });
+  } else {
+    res.status(404).json({
+      success: false,
+      message: "No registrations found",
+    });
+  }
+};

@@ -26,6 +26,7 @@ $ python3 manage.py runserver
 
 ## Contributors
 - <a href="https://github.com/VisheshBansal">Vishesh Bansal</a>
+- <a href="https://github.com/jugaldb">Jugal Bhatt</a>
 
 
 ## License
