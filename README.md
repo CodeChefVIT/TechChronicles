@@ -1,19 +1,19 @@
 <p align="center"><a href="https://www.codechefvit.com" target="_blank"><img src="https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo-3.png" title="CodeChef-VIT" alt="Codechef-VIT"></a>
 </p>
 
-# TechChronicle
+# TechChronicles
 
 > <Subtitle>
-> Website for TechChronicle- A technical content writing event.
+> Website for TechChronicles- A technical content writing event.
 
 ---
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/10968840/TWDamFen) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://techchronicle.codechefvit.com)
+  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://techchronicles.codechefvit.com)
 
 ## Instructions to run
 ```
-$ git clone https://github.com/CodeChefVIT/TechChronicle
-$ cd TechChronicle
+$ git clone https://github.com/CodeChefVIT/TechChronicles
+$ cd TechChronicles
 $ npm install
 $ node app
 $ live-server
