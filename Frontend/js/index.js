@@ -30,4 +30,49 @@
 
 })(jQuery);
 
-console.clear();
+function register(){
+        document.getElementById("regBtn").disabled = true;
+        var email = document.getElementById("email").value;
+        var registration_number = document.getElementById("registration_number").value;
+        var name = document.getElementById("name").value;
+        var mobile_number = document.getElementById("mobile_number").value;
+        if (name != "" && registration_number != "" && email != "" && mobile_number != "") {
+            grecaptcha.ready(() => {
+                grecaptcha.execute('6LdVV3kaAAAAAOdPoch4qj8g5DKmHAAdS9ZmlFlo', {
+                    action: '/'
+                }).then((token) => {
+            var data = {
+                email,
+                registration_number,
+                name,
+                mobile_number,
+                captcha: { token }
+            }
+            var xh = new XMLHttpRequest();
+            xh.open("POST", "https://techchronicle.herokuapp.com/register/addUser", true)
+            xh.setRequestHeader('Content-Type', 'application/json')
+            xh.send(JSON.stringify(data))
+            xh.onload = function () {
+                if (this.status == 201) {
+                    M.toast({ html: 'You have been successfully registered' });
+                    document.getElementById("regBtn").disabled = false;
+                } else if (this.status == 400) {
+                    M.toast({ html: 'Seems like you didn\'t enter something' });
+                    document.getElementById("regBtn").disabled = false;
+                } else if (this.status == 401 || this.status == 409) {
+                    M.toast({ html: 'Looks like you are already registered with us' });
+                    document.getElementById("regBtn").disabled = false;
+                } else {
+                    M.toast({ html: 'Oops something seems to be wrong. Our team is finding out what went wrong' });
+                    document.getElementById("regBtn").disabled = false;
+                }
+            }
+                });
+            });
+        }
+        else {
+            M.toast({ html: 'Seems like you didn\'t enter something' });
+        }
+}
+
+// console.clear();

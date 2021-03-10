@@ -332,8 +332,10 @@ i#prev {
 
 /* Button(s): TC */
 .btn-tc,
-.btn-tc:hover {
-    background-color: #141C25;
+.btn-tc:hover,
+.btn-tc:focus,
+.btn-tc:active {
+    background-color: #3A87F1;
     color: white;
     border-radius: 30px;
     min-width: 200px;
@@ -477,7 +479,8 @@ bounce {
 }
 
 /* Dark Sections */
-#about {
+#about,
+#register {
     background-color: rgba(20, 28, 37, 0.671);
 }
 

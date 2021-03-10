@@ -51,7 +51,6 @@
     <link rel="canonical" href="https://techchronicle.codechefvit.com" />
     <link href="./Frontend/img/favicon.svg" rel="apple-touch-icon" />
     <link href="./Frontend/img/favicon.svg" rel="icon" />
-    <link rel="stylesheet" href="Frontend/css/style.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
@@ -223,6 +222,44 @@
             </div>
         </section>
 
+        <!-- Register -->
+        <section id="register" class="p-4 mt-5">
+            <div class="container">
+                <!-- Heading -->
+                <div class="row px-4">
+                    <h1 class="center bolder heading-color">Register Now</h1>
+                </div>
+                <div class="row px-4">
+                    <!-- Content -->
+                    <div class="col s12 my-3 center">
+                        <!-- Main Content -->
+                        <form class="px-md-5">
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <input type="text" id="name" placeholder="Enter your Name" required>
+                                </div>
+                                <div class="col s12 m6">
+                                    <input type="email" id="email" placeholder="Enter your Email ID" required
+                                        pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+                                </div>
+                                <div class="col s12 m6">
+                                    <input type="tel" placeholder="Enter your Phone Number" required id="mobile_number">
+                                </div>
+                                <div class="col s12 m6">
+                                    <input type="text" placeholder="Enter your Registration Number"
+                                        pattern="[1-2][0-9][A-Za-z]{3}[0-9]{4}" id="registration_number" />
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <button type="submit" class="btn btn-tc waves-effect" id="regBtn"
+                                    onclick="register();">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -275,6 +312,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdVV3kaAAAAAOdPoch4qj8g5DKmHAAdS9ZmlFlo"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="Frontend/js/index.js"></script>
 
