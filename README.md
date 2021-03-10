@@ -1,32 +1,28 @@
 <p align="center"><a href="https://www.codechefvit.com" target="_blank"><img src="https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo-3.png" title="CodeChef-VIT" alt="Codechef-VIT"></a>
 </p>
 
-# TechChronicles
+# TechChronicle
 
 > <Subtitle>
-> Website for TechChronicles event.
+> Website for TechChronicle- A technical content writing event.
 
 ---
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://documenter.getpostman.com/view/10968840/TWDamFen) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://techchronicle.codechefvit.com)
 
-<!--## Features
-- Insert list of features here
-
-## Screenshots
-<img src="https://github.com/akshatvg/common-entry-test/raw/master/static/img/header.png" alt="Project Screenshots">
--->
 ## Instructions to run
 ```
-$ git clone https://github.com/CodeChefVIT/<Project>
-$ cd <Project>
-$ pip3 install -r requirements.txt
-$ python3 manage.py runserver
+$ git clone https://github.com/CodeChefVIT/TechChronicle
+$ cd TechChronicle
+$ npm install
+$ node app
+$ live-server
 ```
 
 ## Contributors
-- <a href="https://github.com/VisheshBansal">Vishesh Bansal</a>
+- <a href="https://github.com/akshatvg">Akshat Gupta</a>
 - <a href="https://github.com/jugaldb">Jugal Bhatt</a>
+- <a href="https://github.com/VisheshBansal">Vishesh Bansal</a>
 
 
 ## License
