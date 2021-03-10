@@ -54,16 +54,21 @@ function register(){
             xh.send(JSON.stringify(data))
             xh.onload = function () {
                 if (this.status == 201) {
-                    M.toast({ html: 'You have been successfully registered' });
+                    M.toast({ html: 'You have been successfully registered 🎉' });
                     document.getElementById("regBtn").disabled = false;
                 } else if (this.status == 400) {
-                    M.toast({ html: 'Seems like you didn\'t enter something' });
+                    M.toast({ html: 'Seems like you didn\'t enter something 😔' });
                     document.getElementById("regBtn").disabled = false;
                 } else if (this.status == 401 || this.status == 409) {
-                    M.toast({ html: 'Looks like you are already registered with us' });
+                    M.toast({ html: 'Looks like you are already registered with us ✨' });
                     document.getElementById("regBtn").disabled = false;
-                } else {
-                    M.toast({ html: 'Oops something seems to be wrong. Our team is finding out what went wrong' });
+                }
+            } else if (this.status == 401) {
+                M.toast({ html: 'Invalid reCaptcha token 😨' });
+                document.getElementById("regBtn").disabled = false;
+            }
+                else {
+                    M.toast({ html: 'Oops something seems to be wrong. Our team is finding out what went wrong 😢' });
                     document.getElementById("regBtn").disabled = false;
                 }
             }
@@ -71,7 +76,7 @@ function register(){
             });
         }
         else {
-            M.toast({ html: 'Seems like you didn\'t enter something' });
+            M.toast({ html: 'Seems like you didn\'t enter something 😔' });
         }
 }
 
