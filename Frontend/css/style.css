@@ -54,7 +54,7 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    font-weight: 1000px;
+    font-weight: 900px;
     transition: all .15s ease-in-out;
 }
 
@@ -65,7 +65,7 @@ h2,h3,h4,h5,h6{
 }
 h1{
     font-size: 64px;
-    font-weight:600px;
+    font-weight: 600px;
     text-align:center;
     margin:1em;
 }
@@ -75,7 +75,6 @@ h1{
     background-color: #191919;
     border-radius: 1em;
     padding:0.5em;
-    box-shadow: 5px 5px 5px #333;
 }
 .content_home h5{
 
@@ -132,6 +131,19 @@ footer {
 .fa-heart {
     color: deepskyblue;
 }
+.gmail{
+    position: relative;
+    text-align: left;
+    margin:2em;
+    width:3rem;
+    height: auto;
+}
+.contact_social{
+    position: relative;
+    align-content: space-evenly ;
+    margin-right: 0em;
+    margin-left:auto;
+}
 #copy{
     font-size: 0.7em;
 }
@@ -185,4 +197,3 @@ input{
     background: linear-gradient(157deg,#2867B2 0%, #00d4ff 75%);
     padding:2em;
 }
-
