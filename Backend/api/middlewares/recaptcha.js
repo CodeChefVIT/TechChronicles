@@ -3,7 +3,7 @@ const recaptchaVerification = async (req, res, next) => {
   if(!req.body.captcha){
     return res.status(401).json({
       success: false,
-      message: "captcha not persent",
+      message: "captcha not present",
     });
   }
   const verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET}&response=${req.body.captcha}`;
