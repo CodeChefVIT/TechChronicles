@@ -25,6 +25,7 @@ const recaptchaVerification = async (req, res, next) => {
           message: err.toString(),
         });
       }
+      next()
     } catch (err) {
       return res.status(500).json({
         success: false,
