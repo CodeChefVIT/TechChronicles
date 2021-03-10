@@ -41,12 +41,13 @@ function register() {
             grecaptcha.execute('6LdVV3kaAAAAAOdPoch4qj8g5DKmHAAdS9ZmlFlo', {
                 action: '/'
             }).then((token) => {
+                console.log(token);
                 var data = {
                     email,
                     registration_number,
                     name,
                     mobile_number,
-                    captcha: { token }
+                    captcha: token
                 }
                 var xh = new XMLHttpRequest();
                 xh.open("POST", "https://techchronicle.herokuapp.com/register/addUser", true)
