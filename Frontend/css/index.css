@@ -405,7 +405,7 @@ h3 {
 .animated {
     -webkit-animation-name: bounceIn;
     -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-out;
     -webkit-animation-fill-mode: forwards;
     animation-name: bounceIn;
@@ -480,7 +480,7 @@ bounce {
 
 /* Dark Sections */
 #about,
-#register {
+#rules-prizes {
     background-color: rgba(20, 28, 37, 0.671);
 }
 
@@ -532,5 +532,5 @@ bounce {
 /* Line Height */
 h5,
 h6 {
-    line-height: 1.6rem;
+    line-height: 1.8rem;
 }
