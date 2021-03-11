@@ -35,8 +35,8 @@ function submitDraft() {
     var registration_number = document.getElementById("registration_number").value;
     var name = document.getElementById("name").value;
     var mobile_number = document.getElementById("mobile_number").value;
-    var draft_link = document.getElementById("draft_link").value;
-    if (name != "" && registration_number != "" && email != "" && mobile_number != "" && draft_link != "") {
+    var data_link = document.getElementById("data_link").value;
+    if (name != "" && registration_number != "" && email != "" && mobile_number != "" && data_link != "") {
         document.getElementById("regBtn").disabled = true;
         grecaptcha.ready(() => {
             grecaptcha.execute('6LdVV3kaAAAAAOdPoch4qj8g5DKmHAAdS9ZmlFlo', {
@@ -47,7 +47,7 @@ function submitDraft() {
                     registration_number,
                     name,
                     mobile_number,
-                    draft_link,
+                    data_link,
                     captcha: token
                 }
                 var xh = new XMLHttpRequest();
