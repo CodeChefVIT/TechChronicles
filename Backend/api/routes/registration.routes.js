@@ -7,7 +7,7 @@ const registrationController = require("../controllers/registration.controller")
 const router = express.Router();
 
 // Register a user
-router.post("/addUser", recaptchaVerification,registrationController.add);
+router.post("/addUser",registrationController.add);
 
 // Get all registered users
 router.get('/all', registrationController.getAll);
