@@ -508,12 +508,12 @@ bounce {
 
 /* Medium */
 .medium {
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
 .medium:hover {
-    background-color: rgba(255, 255, 255, 0.836);
+    background-color: rgba(255, 255, 255, 0.774);
     border-radius: 10px;
 }
 
@@ -527,4 +527,10 @@ bounce {
     height: 230px;
     margin-top: 30px;
     overflow: hidden;
+}
+
+/* Line Height */
+h5,
+h6 {
+    line-height: 1.6rem;
 }
