@@ -15,6 +15,14 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.navbar-fixed {
+    position: absolute !important;
+}
+
+#home {
+    padding-top: 64px;
+}
+
 /* Button Outline */
 
 button {
