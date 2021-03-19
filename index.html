@@ -74,8 +74,9 @@
 </head>
 
 <body>
+
     <!-- Top Nav -->
-    <div class="navbar-fixed" id="home">
+    <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
                 <a href="/" class="brand-logo pl-md-5"><img src="Frontend/img/devsoc21-new.png" alt="CA Community"
@@ -106,13 +107,11 @@
         <li><a class="waves-effect white-text sidenav-alt-bar" href="#submit-draft">Submit Draft</a></li>
     </ul>
 
-
-
     <!-- Main -->
     <main>
 
         <!-- Header -->
-        <div class="container mb-4">
+        <div class="container mb-4" id="home">
             <!-- Heading -->
             <div class="row px-4">
                 <h1 class="left bolder heading-color">TechChronicles</h1>
@@ -255,8 +254,7 @@
                                     <li>For any queries related to how to frame a draft, have a read-
                                         <a
                                             href="https://help.medium.com/hc/en-us/articles/225168768-Writing-and-publishing-a-story">Writing
-                                            & Publishing a Story on Medium</a>.
-                                    </li>
+                                            & Publishing a Story on Medium</a>.</li>
                                 </ul>
                             </h6>
                         </div>
@@ -347,6 +345,7 @@
                                     onclick="submitDraft();">Submit Draft</button>
                             </div>
                         </form>
+                        <!-- <h3 class="center">Draft Submissions begin from <span style="color: #3A87F1;">15th March, 2021</span>.</h3> -->
                     </div>
                 </div>
             </div>
@@ -398,8 +397,7 @@
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#3A87F1" />
-        </svg></div>
+                stroke="#3A87F1" /></svg></div>
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
