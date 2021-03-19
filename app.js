@@ -56,6 +56,7 @@ app.use((req, res, next) => {
 app.use(cors());
 
 app.use("/register", require('./Backend/api/routes/registration.routes'));
+app.use("/codeInvicta", require('./Backend/api/routes/codeInvicta.routes'));
 
 app.get('/', async (req, res) => {
   res.send('Server is running')
@@ -76,8 +77,6 @@ app.use((error, req, res, next) => {
 		},
 	});
 });
-
-
 
 const PORT = process.env.PORT || 3000;
 
