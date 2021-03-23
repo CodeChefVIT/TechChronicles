@@ -51,12 +51,25 @@ exports.add = async (req, res) => {
 };
 
 exports.getAll = async (req, res) => {
+  let arr = []
   const codeInvicta = await CodeInvicta.find({});
-  if (registrations) {
+  if (codeInvicta) {
+    for(let obj of codeInvicta){
+      console.log(obj)
+      let flag = 0
+      for(let itme of arr ){
+        if(itme.email == obj.email)
+        flag =1
+      }
+      if(flag == 0){
+        arr.push(obj)
+      }
+    }
     res.status(200).json({
       success: true,
-      registrations: codeInvicta,
-    });
+      count: arr.length,
+      arr,
+    })
   } else {
     res.status(404).json({
       success: false,
