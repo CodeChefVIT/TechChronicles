@@ -56,13 +56,10 @@ function submitDraft() {
                 xh.send(JSON.stringify(data))
                 xh.onload = function () {
                     if (this.status == 201) {
-                        M.toast({ html: 'You have been successfully registered 🎉' });
+                        M.toast({ html: 'We have received your submission 🎉' });
                         document.getElementById("regBtn").disabled = false;
                     } else if (this.status == 400) {
                         M.toast({ html: 'Seems like you didn\'t enter something 😔' });
-                        document.getElementById("regBtn").disabled = false;
-                    } else if (this.status == 401 || this.status == 409) {
-                        M.toast({ html: 'Looks like you are already registered with us ✨' });
                         document.getElementById("regBtn").disabled = false;
                     } else if (this.status == 401) {
                         M.toast({ html: 'Invalid reCaptcha token 😨' });
