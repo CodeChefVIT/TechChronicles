@@ -17,6 +17,15 @@ exports.add = async (req, res) => {
     });
   } else {
     try {
+      const registered = await CodeInvicta.findOne({
+        email
+      })
+      if(registered){
+        res.status(403).json({
+          success: false,
+          message: "Already registered!"
+        })
+      }
       let codeInvicta = new CodeInvicta({
         _id: new mongoose.Types.ObjectId(),
         email,
