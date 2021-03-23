@@ -55,7 +55,6 @@ exports.getAll = async (req, res) => {
   const codeInvicta = await CodeInvicta.find({});
   if (codeInvicta) {
     for(let obj of codeInvicta){
-      console.log(obj)
       let flag = 0
       for(let itme of arr ){
         if(itme.email == obj.email)
